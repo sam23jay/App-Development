@@ -1,0 +1,215 @@
+.log1total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .login-heading{
+    color: rgb(0, 0, 0);
+  }
+  .log1LoginBig {
+    font-size: 3rem;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+  
+  .log1UserNamestyle,
+  .log1Passwordstyle {
+    border-color: rgb(43, 42, 42);
+    background-color: rgb(43, 42, 42);
+    width: 37%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    outline: none;
+  }
+ 
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .subdivpos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .custom-checkbox {
+    color: rgb(0, 0, 0);
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #222;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  
+  
+  .custom-checkbox:checked::before,
+  .custom-checkbox:checked::after {
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 0 0px #42a342;
+  }
+  
+  .log1logButton {
+    
+    background-color: #09e640;
+    border-color: #09e640;
+    border-radius: 50px;
+    width: 135px;
+    height: 50px;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  
+  .log1logButton:hover {
+    background-color: #0aa81d;
+    border-color: #0aa81d;
+  }
+  
+  .error-message1 {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .referencesignup {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .referencesignup:hover {
+    color: #0b0f0b;
+    text-decoration: underline;
+  }
+  .ChampPoe {
+    margin-top: -120px;
+  }
+  .login-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    width: 380px;
+    height: 480px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0,0.3);
+    padding: 20px;
+    display: flex;
+    color: white;
+    margin-top: -100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .username-input {
+    border-color: rgb(43, 42, 42);
+    height: 3rem;
+    width: 100%;
+    color: rgb(14, 12, 12);
+    margin-bottom: 1rem;
+  }
+  .password-input {
+    border-color: rgb(43, 42, 42);
+    height: 3rem;
+    width: 100%;
+    color: rgb(10, 7, 7);
+    margin-bottom: 1rem;
+  }
+  .username-input:focus {
+    height: 3rem;
+    background-color: rgb(250, 245, 245);
+    color: rgb(0, 0, 0);
+  }
+  .password-input:focus {
+    height: 3rem;
+    background-color: rgb(250, 245, 245);
+    color: rgb(0, 0, 0);
+  }
+  .username-input::before {
+    box-shadow: 0 0 0 3px #09e640;
+  }
+  .password-input::before {
+    box-shadow: 0 0 0 3px #09e640;
+  }
+  .username-input::after {
+    box-shadow: 0 0 0 3px #09e640;
+  }
+  .password-input::after {
+    box-shadow: 0 0 0 3px #09e640;
+  }
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-container {
+        color: rgb(0, 0, 0);
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .custom-checkbox {
+    background-color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #1409e6;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: #2b2595;
+  }
+  
+  .signup-link {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #080a08;
+  }
+  .signup-link:hover {
+    margin-top: 10px;
+    color: #1409e6;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  
