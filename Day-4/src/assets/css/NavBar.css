@@ -1,0 +1,85 @@
+.navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #080707;
+  
+}
+
+.navbar-brand {
+  color: azure;
+  padding: 0 15px;
+}
+.navbar-brand:hover {
+  color: rgb(193, 248, 192);
+  padding: 0 15px;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.LogOutNavbar {
+  background-color: red;
+  border-radius: 10px;
+}
+.LogOutNavbar:hover {
+  background-color: rgb(173, 17, 17);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+/* Add this CSS to NavBar.css */
+.burger-menu {
+  display: none; /* Initially hide the burger menu */
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+
+/* Media query to show the burger menu on small screens */
+@media (max-width: 768px) {
+ 
+  .burger-menu {
+    display: block; 
+  }
+}
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #080707;
+  z-index: 1000;
+}
+
+.mobile-menu .nav-item {
+  padding: 1rem;
+}
+
+.mobile-menu .nav-link {
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: none; 
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
