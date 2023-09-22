@@ -1,0 +1,166 @@
+
+  .org-welcome {
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(to left, gold 0%, rgb(255, 239, 147) 100%);
+    color: #000000;
+  }
+  
+  .welcome-title {
+    font-size: 36px; 
+  }
+  
+  .info-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    font-size: 50px;
+    border-radius: 10px; 
+    padding: 20px; 
+  }
+  .event-header{
+    font-size:xx-large;
+    font-weight: 600;
+  }
+  .info-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+.event-list {
+  color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .event-item {
+    color: #000;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .event-item:last-child {
+    margin-bottom: 0; 
+  }
+  
+  .event-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .event-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .volunteers-enrolled {
+    font-size: 16px;
+    color: #007bff;
+  }
+  .org-info-box {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .org-event-box {
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width:400px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+  }
+  .org-events-and-volunteers {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .org-event-box {
+    flex: 1;
+    margin-right: 20px; 
+  }
+  .org-volunteer-box{
+    color: #000;
+
+    border-radius: 10px;
+    min-width: 300px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+.org-volunteer-list {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  
+  .volunteer-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .volunteer-scrollable-list {
+    max-height: 360px; 
+    width: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .volunteer-item {
+    font-size: 20px;
+    padding: 5px 0;
+    margin-left: 10px;
+  }
+
+
+
+  @media (max-width: 900px) {
+  
+    .welcome-title {
+      width: 100%;
+
+      font-size: 36px; 
+    }
+    
+    .info-list {
+      flex-direction: column;
+    
+    }
+    .info-item {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .org-events-and-volunteers {
+      display: flex;
+      flex-direction: column;
+    }
+    .org-event-box {
+      width: 98%;
+    }
+    .org-volunteer-box{
+      width: 98%;
+    }
+   
+  }
