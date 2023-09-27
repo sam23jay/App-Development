@@ -1,0 +1,225 @@
+/* Explore.css */
+.explore-container {
+  color: white;
+}
+
+.search-bar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  background-color: #2b2b2b;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 7.2px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  max-width: 70%;
+}
+
+.search-button {
+  background-color: #bb84e8; /* Change to your desired button color */
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.event-list-org11 {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between items */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.event-list-org11 h1 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.event-card11 {
+  color: white;
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each item */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for scale and box-shadow */
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: none; /* Remove default border */
+  background-color: rgb(31, 31, 31);
+}
+
+.event-card11:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 7px 8px 10px rgba(115, 31, 151, 1); /* Add a box shadow on hover */
+}
+
+.event-image11 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px; /* Adjust the height as needed */
+}
+
+.event-details11 {
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.2s; /* Add transitions for opacity and transform */
+}
+
+.event-card11:hover .event-details {
+  opacity: 1; /* Make the text fully visible on hover */
+  transform: translate(0, -5px); /* Slightly move the text up on hover */
+}
+/* ... (previous CSS rules) */
+
+.custom-profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 340px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for scale and box-shadow */
+  cursor: pointer;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgb(145, 10, 185);
+}
+
+.custom-profile-box:hover {
+  transform: scale(1.05); /* Scale up the box on hover */
+}
+
+.custom-profile-image {
+  flex: 1; /* Adjust width for the image */
+}
+
+.profile-image-act {
+  padding: 10px;
+  max-width: 35%; /* Set the maximum width for the image */
+  height: auto;
+  border-radius: 10px;
+}
+
+.custom-profile-text {
+  flex: 2;
+  padding-left: 200px; /* Add some left padding to separate image and text */
+  color: white;
+  margin-top: -200px;
+  transition: transform 1s ease-in-out; /* Add a transition for text movement */
+}
+.rating-stars {
+  display: flex;
+  align-items: center;
+}
+.custom-profile-text-feed {
+  flex: 2;
+  padding-left: 360px; /* Add some left padding to separate image and text */
+  color: white;
+  margin-top: -200px;
+  transition: transform 1s ease-in-out; /* Add a transition for text movement */
+}
+.more-events {
+  font-weight: 600;
+  font-size: 45px;
+}
+.custom-profile-box:hover .custom-profile-text-feed {
+  color: #bb84e8;
+  transform: translate(0, -5px); /* Slightly move the text up on hover */
+}
+.custom-profile-text-feed h2 {
+  font-size: 48px;
+}
+.custom-profile-text-feed:hover {
+  color: #bb84e8;
+}
+.custom-profile-text .star-icon {
+  font-size: 50px !important;
+  color: gray;
+}
+.star-button {
+  margin-top: 10px;
+  border: 0px;
+  background-color: rgb(34, 178, 34);
+}
+.star-button:hover {
+  background-color: rgb(27, 145, 27);
+}
+/* Add this CSS to set the color of selected stars to gold */
+.custom-profile-text .star-icon.selected {
+  color: gold;
+}
+.custom-profile-box:hover .custom-profile-text {
+  color: #bb84e8;
+  transform: translate(0, -5px); /* Slightly move the text up on hover */
+}
+
+.custom-profile-text h2 {
+  font-size: 48px;
+}
+
+.custom-profile-text p {
+  font-size: 27px;
+  color: #555;
+}
+/* Add these styles to your CSS */
+.custom-enroll-button {
+  background-color: #bb84e8;
+  border: 0px;
+  color: white;
+  transition: background-color 0.3s;
+}
+.custom-enroll-button:hover {
+  background-color: #8c60b1;
+}
+
+.custom-enroll-button.enrolled {
+  background-color: green;
+}
+
+/* ... (remaining CSS rules) */
+/* Add a media query for smaller screens */
+@media (max-width: 1245px) {
+  .custom-profile-box {
+    flex-direction: column-reverse; /* Stack image below text on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .custom-profile-image {
+    margin-bottom: 20px;
+  }
+
+  .custom-profile-text,
+  .custom-profile-text-feed {
+    padding: 0; /* Remove padding for smaller screens */
+    margin-top: 0; /* Remove margin-top for smaller screens */
+    transition: transform 0.5s ease-in-out; /* Adjust transition for text movement */
+  }
+
+  .custom-profile-text h2,
+  .custom-profile-text-feed h2 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+  }
+
+  .custom-profile-text p,
+  .custom-profile-text-feed p {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+}
+
+.custom-profile-image {
+  flex: 1; /* Adjust width for the image */
+}

@@ -1,0 +1,159 @@
+/* LoginVolunteer.css */
+
+/* Apply styles to the main login page container */
+.login-vol-login-page {
+  display: flex;
+  height: 100vh; /* Cover the entire viewport height */
+}
+
+/* Style the background image div */
+.login-vol-background-image {
+  flex: 60%; /* Take up 60% of the available width */
+  background-image: url("https://demos.themeselection.com/sneat-mui-react-nextjs-admin-template/demo-1/images/pages/boy-with-rocket-light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login-vol-logo {
+  font-size: 10px;
+}
+.logo-and-text {
+  display: flex;
+  align-items: center;
+}
+
+.login-vol-logo {
+  width: 60px;
+  height: auto;
+  margin-left: -10px;
+  margin-right: 5px; /* Adjust the margin as needed to separate the logo and text */
+}
+
+.logo-text {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Optionally make the text bold */
+  color: #d3d3d3; /* Text color */
+  margin-top: -20px;
+}
+
+/* Style the login container div */
+.login-vol-login-container {
+  flex: 40%; /* Take up 40% of the available width */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    1
+  ); /* Semi-transparent white background for the container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.beaut-text {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 200px;
+}
+.login-vol-login-container h3 {
+  font-size: 1.25rem;
+}
+
+/* Style the form group divs */
+.login-vol-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-vol-form-group label {
+  font-weight: bold;
+}
+
+/* Style the input fields */
+.login-vol-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the sign-in button */
+.login-vol-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #bb84e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+.login-vol-btn:hover {
+  background-color: #784f99;
+}
+.small-text-login {
+  font-weight: 100;
+}
+
+.beaut-text p {
+  color: #b4b4b4;
+}
+.beaut-text h3 {
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+.abov-text {
+  margin-bottom: -25px;
+}
+.link-sign-up {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.floating-label {
+  font-size: 13px;
+  color: #000000;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.1s ease;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -25px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 16px;
+  opacity: 1;
+  color: #ffffff;
+}
+.row {
+  margin-top: 50px;
+}
+@media screen and (max-width: 950px) {
+  .login-vol-login-page {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  /* Hide the background image on smaller screens */
+  .login-vol-background-image {
+    display: none;
+  }
+
+  /* Adjust container width for smaller screens */
+  .login-vol-login-container {
+    flex: 100%; /* Take up 100% of the available width */
+    margin-top: 20px; /* Add some space between the image and the container */
+  }
+
+  /* Add styles for smaller screens as needed */
+}
