@@ -1,0 +1,81 @@
+const AddComponent = () => {
+  const [step, setStep] = useState(1);
+
+  const nextStep = () => {
+    setStep((prevStep) => prevStep + 1);
+  };
+
+  const prevStep = () => {
+    setStep((prevStep) => prevStep - 1);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+  };
+
+  return (
+    <div className="add-event-multi-step-form">
+      <form onSubmit={handleSubmit}>
+        {step === 1 && (
+          <div className="add-event-form-step">
+            <h2>Step 1</h2>
+            <label>Email:</label>
+            <Input type="email" required className="add-event-input" />
+            <Button
+              type="button"
+              onClick={nextStep}
+              className="add-event-button"
+            >
+              Next
+            </Button>
+          </div>
+        )}
+        {step === 2 && (
+          <div className="add-event-form-step">
+            <h2>Step 2</h2>
+            <label>Address:</label>
+            <Input type="text" required className="add-event-input" />
+            <label>City:</label>
+            <Input type="text" required className="add-event-input" />
+            <label>Zip Code:</label>
+            <Input type="text" required className="add-event-input" />
+            <Button
+              type="button"
+              onClick={prevStep}
+              className="add-event-button"
+            >
+              Previous
+            </Button>
+            <Button
+              type="button"
+              onClick={nextStep}
+              className="add-event-button"
+            >
+              Next
+            </Button>
+          </div>
+        )}
+        {step === 3 && (
+          <div className="add-event-form-step">
+            <h2>Step 3</h2>
+            <label>First Name:</label>
+            <input type="text" required className="add-event-input" />
+            <label>Last Name:</label>
+            <input type="text" required className="add-event-input" />
+            <Button
+              type="button"
+              onClick={prevStep}
+              className="add-event-button"
+            >
+              Previous
+            </Button>
+            <Button type="submit" className="add-event-button">
+              Submit
+            </Button>
+          </div>
+        )}
+      </form>
+    </div>
+  );
+};

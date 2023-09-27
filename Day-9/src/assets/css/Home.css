@@ -1,0 +1,357 @@
+/* Home.css */
+body {
+  color: rgba(255, 255, 255);
+  background-color: black;
+}
+
+.land-1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image-purple {
+  z-index: -1;
+  width: 100%;
+  max-height: 1800px;
+  position: fixed;
+  top: -15%;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+}
+.land-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px); /* Adjust height to make room for boxes */
+  margin-top: 103px;
+}
+
+.land-welcome {
+  font-family: Arial, sans-serif;
+  font-size: 3.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.land-subtext {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #adabb2;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ... Your existing styles ... */
+/* ... Your existing styles ... */
+
+.action-box {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top of the box */
+  align-items: flex-start; /* Align text to the left of the box */
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: -90px;
+  transition: background-color 0.3s;
+  text-align: left; /* Left-align the text within the box */
+  text-decoration: none; /* Remove default link underline */
+  color: #ffffff; /* Box text color */
+  transition: ease-in 3ms;
+  margin: 0 10px; /* Add margin between boxes */
+  padding: 20px; /* Add padding to create space */
+}
+.action-box:hover {
+  background-color: rgba(255, 255, 255, 0.17);
+}
+.box-heading {
+  font-size: 1.5rem; /* Heading font size */
+  margin-bottom: 10px; /* Space between heading and subtext */
+}
+
+.box-subtext {
+  font-size: 1rem; /* Subtext font size */
+  color: #ffffff; /* Subtext text color */
+  margin-top: 10px; /* Space between heading and subtext */
+}
+
+.box-icon {
+  font-size: 1.5rem; /* Icon font size */
+  transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+/* Add hover styles for the box-icon */
+.action-box:hover .box-icon {
+  transform: translateX(8px); /* Move the icon 5px to the right on hover */
+}
+.centered-text {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.big-text {
+  font-family: Arial, sans-serif;
+  font-size: 3.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.subtext {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #adabb2;
+}
+.big-text1 {
+  font-family: Arial, sans-serif;
+  font-size: 3.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.title-container {
+  text-align: left;
+  padding-left: 110px; /* Adjust the left padding as needed */
+  margin-bottom: 35px;
+}
+
+.big-text2 {
+  font-family: Arial, sans-serif;
+  font-size: 3.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Rest of your CSS styles... */
+
+.subtext1 {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #adabb2;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding as needed */
+  max-width: 1200px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+  margin-bottom: 50px;
+}
+
+.dog-image-container {
+  flex: 1;
+  padding-right: 20px; /* Add space between the image and text */
+}
+
+.text-container {
+  margin-left: 221px;
+  flex: 2;
+}
+
+.content-container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding as needed */
+  max-width: 1200px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+  margin-bottom: 50px;
+}
+
+.dog-image-container1 {
+  flex: 1;
+  padding-left: 20px; /* Add space between the image and text */
+}
+
+.text-container1 {
+  flex: 2;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding as needed */
+  max-width: 1200px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+  margin-bottom: 50px;
+}
+
+.content-container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding as needed */
+  max-width: 1200px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+  margin-bottom: 150px;
+}
+.statistics-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Reduce the gap between boxes */
+  max-width: 900px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-bottom: 30px;
+}
+.fill {
+  color: #1bbe0f;
+}
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #141217;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  color: #333;
+  color: #ffffff;
+  height: 350px; /* Adjust the height of each box */
+  width: 280px; /* Adjust the width of each box */
+  overflow: hidden; /* Hide overflow to control text expansion */
+  transition: 0.3s; /* Add transition for smooth animation */
+}
+
+/* Adjust the positioning of the middle boxes */
+.stat-box:nth-child(2),
+.stat-box:nth-child(5) {
+  margin-top: 50px; /* Add some margin to push them down */
+}
+.stat-box:nth-child(5) {
+  margin-top: 10px; /* Add some margin to push them down */
+}
+.stat-box:nth-child(4),
+.stat-box:nth-child(6) {
+  margin-top: -40px; /* Add some margin to push them down */
+}
+.stat-box:hover {
+  background-color: #2f1a52;
+}
+
+.stat-box h1 {
+  font-size: 3rem; /* Bigger font size for <h1> */
+  margin: 0;
+  transition: font-size 0.3s; /* Add transition for font size change */
+}
+
+.stat-box:hover h1 {
+  font-size: 3.5rem; /* Enlarge font size upon hover */
+}
+
+.stat-box p {
+  color: #adabb2;
+  font-size: 1.2rem; /* Smaller font size for <p> */
+  margin-top: 10px; /* Space between <h1> and <p> */
+  transition: font-size 0.3s; /* Add transition for font size change */
+}
+.stat-box:hover p {
+  font-size: 1.5rem; /* Smaller font size for <p> */
+}
+/* Home.css */
+
+/* ... (Your existing styles) ... */
+
+/* Home.css */
+/* Existing styles... */
+
+/* Initial state for elements */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 4s ease, transform 4s ease;
+}
+
+/* Revealed state for elements */
+.animate-on-scroll.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+.image-home-page {
+  border-radius: 10px;
+  width: 140%;
+  transition: 0.3s;
+}
+.image-home-page:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 900px) {
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .action-box {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 905px) {
+  .stat-box {
+    flex-direction: column;
+
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+  .stat-box :hover {
+    flex-direction: column;
+  }
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Adjust image size for smaller screens and place it above the text */
+  .dog-image-container,
+  .dog-image-container1 {
+    visibility: hidden;
+  }
+  .content-container {
+    margin-top: 200px;
+    margin-left: -300px;
+  }
+  /* Adjust text alignment and margin for smaller screens */
+  .text-container,
+  .text-container1 {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .position-landing-land {
+    margin-top: 200px;
+  }
+  .stat-box {
+    flex-direction: column;
+
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+  .stat-box :hover {
+    flex-direction: column;
+  }
+}
